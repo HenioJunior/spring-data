@@ -23,7 +23,7 @@ public class Funcionario {
 	
 	private Cargo cargo;
 	
-	private UnidadeTrabalho unidade;
+	private Unidade unidade;
 
 	public Integer getId() {
 		return id;
@@ -73,11 +73,11 @@ public class Funcionario {
 		this.cargo = cargo;
 	}
 
-	public UnidadeTrabalho getUnidade() {
+	public Unidade getUnidade() {
 		return unidade;
 	}
 
-	public void setUnidade(UnidadeTrabalho unidade) {
+	public void setUnidade(Unidade unidade) {
 		this.unidade = unidade;
 	}
 }

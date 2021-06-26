@@ -9,8 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "unidade")
-public class UnidadeTrabalho {
+@Table(name = "unidades")
+public class Unidade {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
