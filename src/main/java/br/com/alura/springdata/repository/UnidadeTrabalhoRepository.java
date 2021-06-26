@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.alura.springdata.orm.UnidadeTrabalho;
 
 @Repository
-public interface UnidadeRepository extends CrudRepository<UnidadeTrabalho, Integer> {
+public interface UnidadeTrabalhoRepository extends CrudRepository<UnidadeTrabalho, Integer> {
 
 }
