@@ -6,18 +6,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "cargos")
 public class Cargo {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String descricao;
-	
-	private List<Funcionario> funcionarios;
+	@OneToMany(mappedBy = "cargo")
+	private List<Funcionario> funcionario;
 
 	public Integer getId() {
 		return id;
@@ -33,10 +33,6 @@ public class Cargo {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-		
-	public List<Funcionario> getFuncionarios() {
-		return funcionarios;
 	}
 
 	@Override
